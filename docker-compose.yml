@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  discord.js:
+    container_name: discord.js
+    image: my_discord.js
+    build:
+      context: .
+    ports:
+      - "8123"
+    restart: unless-stopped
