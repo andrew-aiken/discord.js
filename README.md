@@ -4,7 +4,9 @@
 Dependencies:
 - docker installed
 
+Put your bots token & prefix in [config.json](https://github.com/Mad-Chicken/discord.js/blob/master/config.json)
 
+<br>
 
 Change to the discord bots dir
 `cd docker-home/Discord-js-bot`
