@@ -1,14 +1,14 @@
 # Discord Bot
 
 
-Dependencies:
+## Dependencies:
 - docker installed
 
 <br>
-Put your bots token & prefix in ![config.json](https://github.com/Mad-Chicken/discord.js/blob/master/config.json)
+Put your bots token & prefix in config.json
 <br>
 
-Running the bot
+## Running the bot
 ```
 git clone https://github.com/Mad-Chicken/discord.js.git
 cd docker-home/Discord-js-bot
