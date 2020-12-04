@@ -13,4 +13,5 @@ Put your bots token & prefix in config.json
 git clone https://github.com/Mad-Chicken/discord.js.git
 cd docker-home/Discord-js-bot
 vi config.json
-docker-compose up --build --detach```
+docker-compose up --build --detach
+```
