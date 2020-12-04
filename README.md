@@ -5,11 +5,8 @@ Dependencies:
 - docker installed
 
 <br>
-Put your bots token & prefix in [config.json](https://github.com/Mad-Chicken/discord.js/blob/master/config.json)
+Put your bots token & prefix in ![config.json](https://github.com/Mad-Chicken/discord.js/blob/master/config.json)
 <br>
-[Docker Hub](https://hub.docker.com/r/ericjmarti/inventory-hunter):
-<br>
-
 
 Running the bot
 ```
