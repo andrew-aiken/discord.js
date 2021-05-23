@@ -7,21 +7,22 @@ module.exports = {
 	guildOnly: true,
 	execute(message, args) {
 		var _8ball_responses = [
-		'It is certain',
-		'No',
-		'Without a doubt',
-		'You may rely on it',
-		'Most likely',
-		'Ask the child with one eye',
-		'Yes',
-		'Signs point to yes',
-		'Reply hazy, try again',
-		'Better not tell you now',
-		'Cannot predict now',
-		'Don\'t count on it',
-		'Maybe',
-		'My sources say no',
-		'Very doubtful'
+			'It is certain',
+			'Yes',
+			'Without a doubt',
+			'You may rely on it',
+			'Signs point to yes',
+			'Most likely',
+			'Fuck off',
+			'Don\'t waste my processing power on such a stupid question',
+			'That\'s above my pay grade',
+			'Reply hazy, try again',
+			'Maybe',
+			'No',
+			'NO! You absolue dummy',
+			'Don\'t count on it',
+			'My sources say no',
+			'Very doubtful'
 		];
 		var answer = Math.floor(Math.random() * (_8ball_responses.length + 1));
 		console.log(`${_8ball_responses[answer]}`)

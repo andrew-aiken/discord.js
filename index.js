@@ -17,12 +17,15 @@ client.once('ready', () => {
 
 //Member Join
 client.on("guildMemberAdd", member => {
+	console.log(`New User "${member.user.username}" has joined "${member.guild.name}"` );
+	member.guild.systemChannel.send(`"${member.user.username}" has joined this server`);
 	member.send(`Welcome the the server ${member}!`);
 });
 
 
 //Member Leave
 client.on("guildMemberRemove", member => {
+	console.log(`${member} left`);
 	member.guild.systemChannel.send(`${member} left the server 😢`).then(sentEmbed => {
 		sentEmbed.react("😢");
 	});
@@ -105,5 +108,9 @@ client.on('message', message => {
 	}
 });
 
+// Warning
+client.on("warn", function(info){
+    console.log(`warn: ${info}`);
+});
 
 client.login(token);
