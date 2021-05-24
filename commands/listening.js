@@ -8,7 +8,6 @@ module.exports = {
 	execute(message, args) {
 		console.log(`Setting listening status to: ${args.join(' ')}`);
 		message.client.user.setPresence({
-			status: 'available',
 			activity: {
 				name: `${args.join(' ')}`,
 				type: 'LISTENING',
