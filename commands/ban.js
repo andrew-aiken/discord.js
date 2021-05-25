@@ -7,6 +7,9 @@ module.exports = {
 	adminRole: true,
 	usage: '<user> <reason>',
 	execute(message, args) {
+		if (!message.mentions.users.size) {
+            return message.reply('you need to tag a user in order to ban them!');
+		}
 		const user = message.mentions.members.first();
 		var reason = args.slice(1).join(' ');
 		try {
