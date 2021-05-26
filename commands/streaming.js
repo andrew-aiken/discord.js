@@ -2,8 +2,8 @@ module.exports = {
 	name: 'streaming',
     description: 'streaming status',
 	guildOnly: true,
+    devRole: true,
 	args: true,
-	devRole: true,
 	usage: '<url>',
 	execute(message, args) {
 		console.log(`Setting streaming status to: ${args.join(' ')}`);

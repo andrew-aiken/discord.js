@@ -2,8 +2,8 @@ module.exports = {
 	name: 'listening',
     description: 'listening status',
 	guildOnly: true,
+    devRole: true,
 	args: true,
-	devRole: true,
 	usage: '<target>',
 	execute(message, args) {
 		console.log(`Setting listening status to: ${args.join(' ')}`);

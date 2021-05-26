@@ -2,8 +2,8 @@ module.exports = {
 	name: 'status',
     description: 'online status',
 	guildOnly: true,
+    devRole: true,
 	args: true,
-	devRole: true,
 	usage: '<status>',
 	execute(message, args) {
 		if (args.join(' ') == "online") {

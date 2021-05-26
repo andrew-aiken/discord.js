@@ -2,9 +2,9 @@ module.exports = {
 	name: '8ball',
 	description: '8ball',
 	aliases: ['lucky', 'question'],
+    guildOnly: true,
 	args: true,
 	usage: '<question>',
-	guildOnly: true,
 	execute(message, args) {
 		var _8ball_responses = [
 			'It is certain',

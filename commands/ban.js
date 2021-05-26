@@ -3,8 +3,8 @@ module.exports = {
     description: 'ban hammer',
     aliases: ['exile', 'hammer'],
 	guildOnly: true,
+    adminRole: true,
 	args: true,
-	adminRole: true,
 	usage: '<user> <reason>',
 	execute(message, args) {
 		if (!message.mentions.users.size) {

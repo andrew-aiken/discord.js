@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 module.exports = {
         name: 'message',
-        devRole: 'true',
         guildOnly: true,
+        devRole: 'true',
         description: 'Embedded Message',
         execute(message, args) {
             const exampleEmbed = new Discord.MessageEmbed()

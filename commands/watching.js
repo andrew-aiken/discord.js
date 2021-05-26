@@ -2,8 +2,8 @@ module.exports = {
 	name: 'watching',
     description: 'watcing status',
 	guildOnly: true,
+    devRole: true,
 	args: true,
-	devRole: true,
 	usage: '<target>',
 	execute(message, args) {
 		console.log(`Setting watcing status to: ${args.join(' ')}`);

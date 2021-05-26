@@ -3,8 +3,8 @@ module.exports = {
     description: 'kick',
     aliases: ['hammer', 'slap'],
 	guildOnly: true,
+    adminRole: true,
 	args: true,
-	adminRole: true,
 	usage: '<user>',
 	execute(message, args) {
 		if (!message.mentions.users.size) {
