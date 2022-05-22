@@ -2,7 +2,7 @@ module.exports = {
 	name: '8ball',
 	description: '8ball',
 	aliases: ['lucky', 'question'],
-    guildOnly: true,
+  guildOnly: true,
 	args: true,
 	usage: '<question>',
 	execute(message, args) {
@@ -25,7 +25,7 @@ module.exports = {
 			'Very doubtful'
 		];
 		var answer = Math.floor(Math.random() * (_8ball_responses.length + 1));
-		console.log(`${_8ball_responses[answer]}`)
-		message.channel.send(`Question: ${args}\n${_8ball_responses[answer]}`);
+		console.log(_8ball_responses[answer])
+		message.reply(_8ball_responses[answer]);
 	},
 };

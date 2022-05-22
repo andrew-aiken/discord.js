@@ -1,12 +1,11 @@
-FROM node:14
+FROM node:alpine
 
 EXPOSE 8123
 WORKDIR /home/node/
 
-RUN apt-get update && apt-get install -y
-
 RUN npm init -y
-RUN npm install discord.js@12.3.1
+RUN npm i discord.js@13.7.0
+
 COPY . .
 
 CMD ["node","/home/node/index.js"]
