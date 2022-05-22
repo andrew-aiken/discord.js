@@ -1,7 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix, token } = require('./config.json');
-const { exit } = require('process');
 
 // const client = new Discord.Client();
 const client = new Discord.Client({ intents: [
